@@ -1,0 +1,57 @@
+**DDL COMMANDS**
+
+CREATE A TABLE
+
+-> create table <tablename> (COL1 datatype, COL2 datatype ....);
+ex : create table testing (hi varchar2, age integer);
+-> create table <newtablename> as select * from <oldtablename>; 
+
+DESCRIBE A TABLE
+
+-> desc <tablename>;
+
+ALTER TABLE
+
+-> alter table <tablename> modify <old colname> <new datatype>; (MODIFY A COL)
+-> alter table <tablename> add <colname> <datatype>; (ADD A COL)
+-> alter table <tablename> drop <colname>; (DEL A COL)
+
+TRUNCATE TABLE
+
+-> truncate table <tablename>; (DELS ALL THE FIELDS)
+
+DROP TABLE
+
+-> drop table <tablename>; (DEL THE TABLE)
+
+
+**DML COMMANDS**
+
+INSERT VALUE
+
+-> insert into <tablename> values(val1, val2,....);
+
+DISPLAY THE ELEMENTS
+
+-> select * from <tablename>; (DISPLAYS ALL THE VALUES)
+-> select <colname> from <tablename>; (DISPLAYS SPECIFIC COL)
+-> select * from <tablename> where <condition>; (CONDITION BASED)
+
+UPDATE A FIELD
+
+-> update <tablename> set <colname> = "value" where <condition>;
+
+DELETE A RECORD
+
+-> delete from <tablename> where <condition>;
+
+LIKE COMMAND
+
+-> select * from <tablename> where <colname> like '%a%'; (Starts with 'a')
+						  '%a';  (Ends with 'a')
+						  '%ai'; (Finds 'ai' in record)	
+
+CREATE VIEW
+
+-> create table <newtablename> as select * from <oldtablename>; (READ & WRITE)
+-> create table <newtablename> as select * from <oldtablename> with read only; (READ ONLY)
