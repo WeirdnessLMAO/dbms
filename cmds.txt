@@ -49,7 +49,7 @@ LIKE COMMAND
 
 -> select * from <tablename> where <colname> like '%a%'; (Starts with 'a')
 						  '%a';  (Ends with 'a')
-						  '%ai'; (Finds 'ai' in record)	
+						  '%ai%'; (Finds 'ai' in record)	
 
 CREATE VIEW
 
